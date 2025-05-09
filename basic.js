@@ -4,9 +4,9 @@ const cowsay = require('cowsay')
 const helloWorld = () => {
 
     console.log(
-        cowsay.say({
-            text: 'hey man!',
-            e: 'xx',
+        cowsay.think({
+            text: 'Hey man!',
+            e: '^^',
             r: true,
         })
     )
