@@ -1,6 +1,10 @@
 const colors = require('colors')
 const cowsay = require('cowsay')
 const sanitize = require('path-sanitizer').default
+var serialize = require('serialize-javascript');
+
+
+
 
 const helloWorld = () => {
 
@@ -11,6 +15,12 @@ const helloWorld = () => {
             r: true,
         })
     )
+
+    console.log(serialize({
+    str  : 'string',
+    num  : 0,
+    obj  : {foo: 'foo'},
+}))
 
     console.log(sanitize('path/to/file.txt'))
 }
