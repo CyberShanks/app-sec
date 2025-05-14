@@ -23,6 +23,7 @@ const helloWorld = () => {
 }))
 
     console.log(sanitize('path/to/file.txt'))
+    console.log('testing2')
 }
 
 helloWorld()
